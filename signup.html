@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="./styles/auth.css">
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    </head>
+    <body>
+        <div class="signup-container">
+            <div class="signup-box">
+                <h2>Sign Up</h2>
+                <form autocomplete="off" id="signupForm">
+                    <div class="input-group">
+                        <input type="text" id="username" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirm-password" required>
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                    <button type="button" onclick="signUp()">Sign Up</button>
+                    <p class="login-link">
+                        Already have an account?
+                        <a href="index.html">Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+        <script src="./scripts/authsignup.js"></script>
+    </body>
+</html>

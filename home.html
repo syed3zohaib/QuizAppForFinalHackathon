@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <!-- My links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Firebase scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+  </head>
+  <body>
+    <div class="logout-btn">
+      <button id="historyBtn">History</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+    <div id="parent">
+      <div class="container">
+        <h1 id="headingno">Quiz</h1>
+        <div id="quiz"></div>
+        <div id="parentbtnnext">
+          <button id="nextButton" style="display: none;">Next Question</button>
+        </div>
+        <div id="timer">
+          <span id="time"></span>
+        </div>
+        <div id="finalScore" style="display: none;"></div>
+        <div style="display: flex; justify-content: center;" class="a">
+          <button id="restartButton" style="display: none;">Restart Quiz</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
